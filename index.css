@@ -1,0 +1,227 @@
+body {
+	background: #2871af;
+	font-family: lato;
+	margin:0;
+	padding:0;
+}
+
+footer{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+/*Slider*/
+.w3-content.w3-display-container {
+	height: 500px;
+}
+
+/*main Stats*/
+.mainStats{
+	width:100%;
+	background: #2871af;
+}
+.mainStats1, .mainStats2, .mainStats3, .mainStats4{
+	width: 24.77%;
+	display: inline-block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin: 0;
+}
+.mainStatsNumber > p{
+	margin: 0;
+	padding:0;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+
+.mainStatsText > p{
+	margin: 0;
+	padding:0;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+}
+
+
+/*about_us*/
+.about_us{
+	max-width:100%;
+	padding: 0;
+	margin: 0;
+	background: #2871af;
+}
+
+.heading_in_about_us{
+	color: #2871af;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 40px;
+	background-color: white;
+}
+.heading_in_about_us>h2{
+	margin:0%;
+	padding:0%;
+}
+
+.about_us > p {
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+.about_us.sect1, .about_us.sect2, .about_us.sect3{
+	padding-bottom: 1%;
+	padding: 0;
+	max-width: 33.13%;
+	display: inline-block;
+}
+
+.hInSect{
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	margin-top: 20px;
+}
+
+/*projects*/
+.projects{
+	max-width:100%;
+}
+
+.row{
+	background-color: white;
+	margin: 0; 
+}
+
+.heading_in_Projects{
+	background: white;
+	margin: 0;
+	padding: 0;
+}
+.heading_in_Projects > h2{
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0.5%;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.projects > p {
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+.projectsSect1, .projectsSect2, .projectsSect3, .projectsSect4{
+	width: 22.77%;
+	padding: 1%;
+	display: inline-block;
+	background-color: white;
+	margin: 0;
+}
+
+.projectsSection{
+	width: 100%;
+	border: 1px solid;
+	background-color: white;
+}
+
+.hInProjectSect{
+	text-align: left;
+	font-size: 20px;
+	color: black;
+	margin-top: 2px;
+	padding-left: 1%;
+}
+
+.thumbnail > img{
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.projectDetails > p {
+	font-size: 12px;
+	color: black;
+	text-align: left;
+	padding-left: 1%;
+}
+
+.progress{
+	margin-bottom: 10px;
+	margin-top: 0;
+	padding: 0.5%;
+	border-radius: 10px;
+}
+
+.progressReport{
+	margin-top: 50px;
+}
+
+.progressReport > p{
+	font-size: 10px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.progressNumber{
+	float: left;
+	padding-left: 1%;
+}
+
+.progressText{
+	padding-right: 1%;
+	float: right;
+}
+
+.progressNumber > p, .progressText > p{
+	margin-bottom:0;
+	font-weight: bold;
+	color: black;
+}
+
+.progress > progress{
+	height: 10px;
+	width: 99.5%;
+	border:1px solid;
+	border-radius: 10px;
+}
+
+#progressbar::-moz-progress-bar {
+  background-color: #2871af;
+}
+
+.Stats1, .Stats2, .Stats3{
+	margin: 0;
+	width: 31.47%;
+	padding: 0.5%;
+	display: inline-block;
+}
+
+.StatsNumber > p{
+	margin: 0;
+	padding-left: 1%;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}
+
+.StatsText > p{
+	margin: 0;
+	padding-left: 1%;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+}
+
+.footer{
+	padding: 1%;
+	text-align: center;
+}

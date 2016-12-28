@@ -1,0 +1,70 @@
+.w3-content{
+	max-width:980px;
+	margin:auto
+}
+.w3-content.w3-display-container {
+	overflow: hidden;
+	position:relative;
+	max-width: 100%;
+}
+.w3-content.w3-display-container > div > img {
+	max-width: 100%;
+	position: absolute;
+	width: auto\9;
+}
+.w3-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.w3-left, .w3-right, .w3-badge {
+	color: black;
+	cursor:pointer
+}
+.w3-badge {
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+	height:13px;
+	width:13px;
+	border-radius: 50%;
+	padding: 0;
+}
+.w3-center {
+    text-align: center !important;
+}
+.w3-large {
+    font-size: 18px !important;
+}
+.w3-border {
+    border: 1px solid #ccc !important;
+}
+.w3-padding-left {
+    padding-left: 16px !important;
+}
+.w3-padding-right {
+    padding-right: 16px !important;
+}
+.w3-left {
+    float: left !important;
+}
+.w3-right {
+    float: right !important;
+}
+.w3-transparent {
+    background-color: transparent !important;
+}
+.w3-white, .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+}
+.w3-text-white, .w3-hover-text-white:hover {
+    color: #fff !important;
+}
+.w3-text-black,.w3-hover-text-black:hover{
+	color:#000!important;
+}

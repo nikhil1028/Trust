@@ -1,0 +1,22 @@
+header{
+	text-align: center;
+	color: black;
+	padding: 1px;
+	margin:0;
+	background-color: #2871af;
+}
+
+.header1{
+	display: inline-block;
+	float: left;
+	width: 10%;
+}
+.header3{
+	display: inline-block;
+	float: right;
+	width: 10%;
+}
+.header2{
+	display: inline-block;
+	width: 70s%;
+}
