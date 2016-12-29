@@ -1,0 +1,114 @@
+.explore {
+    /* Height & width depends on how you want to reveal the explore (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: white; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the explore (height or width, depending on reveal) */
+}
+
+/* Position the content inside the explore */
+.explore-content {
+    position: relative;
+	margin-left: 5%;
+    width: 100%; 
+    text-align: left;
+    margin-top: 30px; 
+}
+
+/* The navigation links inside the explore */
+.explore a {
+	cursor: pointer;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+	padding-left: 0;
+}
+
+/* When you mouse over the navigation links, change their color */
+.explore a:hover, .explore a:focus {
+    color: #2871af;
+}
+
+.explore h2 {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    padding-left: 0px;
+    margin-bottom: 0;
+	margin-top: 0;
+}
+
+.explore p{
+    text-decoration: none;
+    font-size: 20px;
+	padding: 8px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 0;
+}
+
+.locationSearch{
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+input[type=text] {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.causes h2, .funding h2, .location h2{
+	width: 90%;
+	border-bottom: 1px solid;
+	border-bottom-color: #2871af;
+}
+
+.fundingLevels{
+	width: 78%;
+	display: inline-block;
+}
+
+.funding p{
+	width: 29%;
+	display: inline-block;
+	padding-left: 0;
+    margin-top: 5px;
+	margin: 0
+}
+
+/* Position the close button (top right corner) */
+.explore .closebtn {
+    position: absolute;
+	right: 30px;
+    font-size: 40px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .explore a {font-size: 20px}
+    .explore .closebtn {
+        font-size: 40px;
+        right: 30px;
+    }
+}

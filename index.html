@@ -1,86 +1,143 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Trust : Impact Investing Reimagined</title>
+	<title>Re!magine Giving</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="responsive.css" media="screen"/>
 </head>
   
 <body>
 	<header>
-		<div class="headerText">
-			<h2 class="header1"><u>Explore</u></h2>
-			<h1 class="header2">Trust : Impact Investing Reimagined</h1>
-			<h2 class="header3"><u>Log In</u></h2>
+		<div class="headerText row">
+			<h2 class="header1"><span onclick="openNav()">Explore</span></h2>
+				<div id="myNav" class="explore">
+					<!-- Button to close the explorer -->
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+					<!-- explore content -->
+					<div class="explore-content">
+						<div class="location">
+							<h2>Location</h2>
+							<div class="locationSearch">
+								<input type="text" name="search" placeholder="Location..">
+							</div>
+						</div>
+						<div class="funding">
+							<h2>Funding</h2>
+							<div class="fundingLevels">
+								<input type="radio" name="fundingLevels" value="almost" checked><p>Nearly Completed</p>
+								<input type="radio" name="fundingLevels" value="new"><p> Just Started</p>
+								<input type="radio" name="fundingLevels" value="ongoing"><p> Ongoing</p>
+							</div>
+						</div>
+						<div class="causes">
+							<h2>Causes</h2>
+							<div class="causesList">
+								<div class="causesList1">
+									<a>Education</a>
+								</div>
+								<div class="causesList2">
+									<a>Health</a>
+								</div>
+								<div class="causesList3">
+									<a>Children</a>
+								</div>
+								<div class="causesList4">
+									<a>Women Empowerment</a>
+								</div>
+								<div class="causesList5">
+									<a>Food and Hunger</a>
+								</div>
+								<div class="causesList1">
+									<a>Sports</a>
+								</div>
+								<div class="causesList1">
+									<a>Animal Welfare</a>
+								</div>
+								<div class="causesList1">
+									<a>Enviroment</a>
+								</div>
+								<div class="causesList6">
+									<a>Others</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<script src="explore.js"></script>
+			<h1 class="header2">Re!magine Giving</h1>
+			<h2 class="header3">Log In</h2>
 		</div>
 	</header>
-	
-	<div class="w3-content w3-display-container">
+	<div class="slideshow">
+		<div class="w3-content w3-display-container row">
 			<div class="image"><img class="mySlides" src="DSC_0115.jpg" ></div>	  
 			<div class="image"><img class="mySlides" src="DSC_0126_.jpg" ></div>
 			<div class="image"><img class="mySlides" src="DSC_0133__.jpg"></div>
 			<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-			<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-			<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-			<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+				<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			</div>
 		</div>
 	</div>
 	<script src="slideshow.js"></script>
 	
-	<div class="mainStats">
-		<div class="mainStatsData">
-			<div class="mainStats1">
-				<div class="mainStatsNumber">
-					<p>Rs 900000</p>
-				</div>
-				<div class="mainStatsText">
-					<p>Raised</p>
-				</div>
+	<div class="mainStats row">
+		<div class="mainStats1 col-3">
+			<div class="mainStatsNumber row">
+				<p>Rs 900000</p>
 			</div>
-			<div class="mainStats2">
-				<div class="mainStatsNumber">
-					<p>Rs 1000000</p>
-				</div>
-				<div class="mainStatsText">
-					<p>Required</p>
-				</div>
+			<div class="mainStatsText row">
+				<p>Raised</p>
 			</div>
-			<div class="mainStats3">
-				<div class="mainStatsNumber">
-					<p>912</p>
-				</div>
-				<div class="mainStatsText">
-					<p>Backers</p>
-				</div>
+		</div>
+		<div class="mainStats2 col-3">
+			<div class="mainStatsNumber row">
+				<p>Rs 1000000</p>
 			</div>
-			<div class="mainStats4">
-				<div class="mainStatsNumber">
-					<p>912</p>
-				</div>
-				<div class="mainStatsText">
-					<p>Backers</p>
-				</div>
+			<div class="mainStatsText row">
+				<p>Required</p>
+			</div>
+		</div>
+		<div class="mainStats3 col-3">
+			<div class="mainStatsNumber row">
+				<p>912</p>
+			</div>
+			<div class="mainStatsText row">
+				<p>Backers</p>
+			</div>
+		</div>
+		<div class="mainStats4 col-3">
+			<div class="mainStatsNumber row">
+				<p>912</p>
+			</div>
+			<div class="mainStatsText row">
+				<p>Backers</p>
 			</div>
 		</div>
 	</div>
 		
 	<div class="about_us">
-		<div class="heading_in_about_us"><h2>About Us</h2></div>
+		<div class="heading_in_about_us "><h2>About Us</h2></div>
 		<div class="row">
-			<div class="about_us sect1">
+			<div class="about_us sect1 col-4">
 				<h2 class="hInSect">Who are we?</h2>
 				<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
 				</p>
 			</div>
-			<div class="about_us sect2">
+			<div class="about_us sect2 col-4">
 				<h2 class="hInSect">The Trust Factor</h2>
 				<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
 				</p>
 			</div>
-			<div class="about_us sect3">
+			<div class="about_us sect3 col-4">
 				<h2 class="hInSect">Stay Connected</h2>
 				<p>In a social context, trust has several connotations.[1] Definitions of trust[2][3] typically refer to a situation characterized by the following aspects: One party (trustor) is willing to rely on the actions of another party (trustee); the situation is directed to the future. In addition, the trustor (voluntarily or forcedly) abandons control over the actions performed by the trustee.
 				</p>
@@ -91,12 +148,10 @@
 	<div class="projects">
 		<div  class="heading_in_Projects"><h2>Recommended Projects for you</h2>
 		<div class="row">
-			<div class="projectsSect1">
-				<div class="projectsSection">
-					<div class="projectThumbnail">
-						<div class="thumbnail">
-							<img src="DSC_0115.jpg" >
-						</div>
+			<div class="projectsSect1 col-3">
+				<div class="projectsSection row">
+					<div class="thumbnail">
+						<img class="img-thumbnail" src="DSC_0115.jpg" >
 					</div>
 					<div class="projectDetails">
 						<h2 class="hInProjectSect">Stay Connected</h2>
@@ -104,47 +159,49 @@
 						</p>
 					</div>
 					<div class="projectStats">
-						<div class="progressReport">
-							<div class="progressNumber">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
 								<p>90%</p>
 							</div>
-							<div class="progressText">
+							<div class="progressText col-6">
 								<p>Completed</p>
 							</div>
 						</div>
 						<div class="progress"><progress  id="progressbar" value="90" max="100"></progress></div>
-						<div class="Stats1">
-							<div class="StatsNumber">
-								<p>Rs 900000</p>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 900000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
 							</div>
-							<div class="StatsText">
-								<p>Raised</p>
+							<div class="Stats2 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 1000000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
 							</div>
-						</div>
-						<div class="Stats2">
-							<div class="StatsNumber">
-								<p>Rs 1000000</p>
-							</div>
-							<div class="StatsText">
-								<p>Required</p>
-							</div>
-						</div>
-						<div class="Stats3">
-							<div class="StatsNumber">
-								<p>912</p>
-							</div>
-							<div class="StatsText">
-								<p>Backers</p>
+							<div class="Stats3 col-4">
+								<div class="StatsNumber row">
+									<p>912</p>
+								</div>
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="projectsSect2">
-				<div class="projectsSection">
+			<div class="projectsSect2 col-3">
+				<div class="projectsSection row">
 					<div class="projectThumbnail">
 						<div class="thumbnail w3-container">
-							<img src="DSC_0126_.jpg" >
+							<img class="img-thumbnail" src="DSC_0126_.jpg" >
 						</div>
 					</div>
 					<div class="projectDetails">
@@ -153,46 +210,50 @@
 						</p>
 					</div>
 					<div class="projectStats">
-						<div class="progressReport">
-							<div class="progressNumber">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
 								<p>30%</p>
 							</div>
-							<div class="progressText">
+							<div class="progressText col-6">
 								<p>Completed</p>
 							</div>
 						</div>
-						<div class="progress"><progress id="progressbar" value="30" max="100"></progress></div>
-						<div class="Stats1">
-							<div class="StatsNumber">
-								<p>Rs 600000</p>
+						<div class="progress row"><progress id="progressbar" value="30" max="100"></progress></div>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 600000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
 							</div>
-							<div class="StatsText">
-								<p>Raised</p>
+							<div class="Stats2 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 2000000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
 							</div>
-						</div>
-						<div class="Stats2">
-							<div class="StatsNumber">
-								<p>Rs 2000000</p>
-							</div>
-							<div class="StatsText">
-								<p>Required</p>
-							</div>
-						</div>
-						<div class="Stats3">
-							<div class="StatsNumber">
-								<p>543</p>
-							</div>
-							<div class="StatsText">
-								<p>Backers</p>
+							<div class="Stats3 col-4">
+								<div class="StatsNumber row">
+									<p>543</p>
+								</div>
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="projectsSect3">
-				<div class="projectsSection">
+			<div class="projectsSect3 col-3">
+				<div class="projectsSection row">
 					<div class="projectThumbnail">
-						<div class="thumbnail"><img src="DSC_0133__.jpg" ></div>
+						<div class="thumbnail">
+							<img class="img-thumbnail" src="DSC_0133__.jpg" >
+						</div>
 					</div>
 					<div class="projectDetails">
 						<h2 class="hInProjectSect">Stay Connected</h2>
@@ -200,46 +261,50 @@
 						</p>
 					</div>
 					<div class="projectStats">
-						<div class="progressReport">
-							<div class="progressNumber">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
 								<p>50%</p>
 							</div>
-							<div class="progressText">
+							<div class="progressText col-6">
 								<p>Completed</p>
 							</div>
 						</div>
 						<div class="progress"><progress id="progressbar" value="50" max="100" ></progress></div>
-						<div class="Stats1">
-							<div class="StatsNumber">
-								<p>Rs 250000</p>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 250000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
 							</div>
-							<div class="StatsText">
-								<p>Raised</p>
+							<div class="Stats2 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 500000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
 							</div>
-						</div>
-						<div class="Stats2">
-							<div class="StatsNumber">
-								<p>Rs 500000</p>
-							</div>
-							<div class="StatsText">
-								<p>Required</p>
-							</div>
-						</div>
-						<div class="Stats3">
-							<div class="StatsNumber">
-								<p>402</p>
-							</div>
-							<div class="StatsText">
-								<p>Backers</p>
+							<div class="Stats3 col-4">
+								<div class="StatsNumber row">
+									<p>402</p>
+								</div>
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="projectsSect4">
-				<div class="projectsSection">
+			<div class="projectsSect4 col-3">
+				<div class="projectsSection row">
 					<div class="projectThumbnail">
-						<div class="thumbnail"><img src="DSC_0115.jpg" ></div>
+						<div class="thumbnail">
+							<img class="img-thumbnail" src="DSC_0115.jpg" >
+						</div>
 					</div>
 					<div class="projectDetails">
 						<h2 class="hInProjectSect">Stay Connected</h2>
@@ -247,37 +312,39 @@
 						</p>
 					</div>
 					<div class="projectStats">
-						<div class="progressReport">
-							<div class="progressNumber">
+						<div class="progressReport row">
+							<div class="progressNumber col-6">
 								<p>40%</p>
 							</div>
-							<div class="progressText">
+							<div class="progressText col-6">
 								<p>Completed</p>
 							</div>
 						</div>
 						<div class="progress"><progress id="progressbar" value="40" max="100"></progress></div>
-						<div class="Stats1">
-							<div class="StatsNumber">
-								<p>Rs 1026800</p>
+						<div class="row">
+							<div class="Stats1 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 1026800</p>
+								</div>
+								<div class="StatsText row">
+									<p>Raised</p>
+								</div>
 							</div>
-							<div class="StatsText">
-								<p>Raised</p>
+							<div class="Stats2 col-4">
+								<div class="StatsNumber row">
+									<p>Rs 2567000</p>
+								</div>
+								<div class="StatsText row">
+									<p>Required</p>
+								</div>
 							</div>
-						</div>
-						<div class="Stats2">
-							<div class="StatsNumber">
-								<p>Rs 2567000</p>
-							</div>
-							<div class="StatsText">
-								<p>Required</p>
-							</div>
-						</div>
-						<div class="Stats3">
-							<div class="StatsNumber">
-								<p>712</p>
-							</div>
-							<div class="StatsText">
-								<p>Backers</p>
+							<div class="Stats3 col-4">
+								<div class="StatsNumber row">
+									<p>712</p>
+								</div>
+								<div class="StatsText row">
+									<p>Backers</p>
+								</div>
 							</div>
 						</div>
 					</div>
