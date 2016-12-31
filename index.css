@@ -181,6 +181,9 @@ footer{
 	font-weight: bold;
 	color: black;
 }
+.progressText > p{
+	float: right;
+}
 
 .progress > progress{
 	height: 10px;
@@ -216,10 +219,8 @@ footer{
 	color: black;
 }
 
+/*footer*/
 .footer{
 	padding: 1%;
 	text-align: center;
 }
-
-
-/* responsive */

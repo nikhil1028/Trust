@@ -59,11 +59,11 @@
     padding-left: 0;
 }
 
-.locationSearch{
+.inputField{
 	margin-top: 5px;
 	margin-bottom: 8px;
 }
-input[type=text] {
+.explore input[type=text]{
     width: 90%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -78,7 +78,7 @@ input[type=text] {
     transition: width 0.4s ease-in-out;
 }
 
-.causes h2, .funding h2, .location h2{
+.explore-content h2{
 	width: 90%;
 	border-bottom: 1px solid;
 	border-bottom-color: #2871af;

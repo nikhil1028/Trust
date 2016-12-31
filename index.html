@@ -3,76 +3,174 @@
 <head>
 	<title>Re!magine Giving</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="header.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="basicHeader.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="SignUp.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="responsive.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="responsiveIndex.css" media="screen"/>
+	
+	<script src="SignUp.js"></script>
+	<script src="explore.js"></script>
+	<script src="slideshow.js"></script>
 </head>
   
 <body>
 	<header>
 		<div class="headerText row">
-			<h2 class="header1"><span onclick="openNav()">Explore</span></h2>
+			<h2 class="exploreButton"><span onclick="openNav()">Explore</span></h2>
 				<div id="myNav" class="explore">
 					<!-- Button to close the explorer -->
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	
+
 					<!-- explore content -->
 					<div class="explore-content">
-						<div class="location">
-							<h2>Location</h2>
-							<div class="locationSearch">
-								<input type="text" name="search" placeholder="Location..">
-							</div>
-						</div>
-						<div class="funding">
-							<h2>Funding</h2>
-							<div class="fundingLevels">
-								<input type="radio" name="fundingLevels" value="almost" checked><p>Nearly Completed</p>
-								<input type="radio" name="fundingLevels" value="new"><p> Just Started</p>
-								<input type="radio" name="fundingLevels" value="ongoing"><p> Ongoing</p>
-							</div>
-						</div>
-						<div class="causes">
-							<h2>Causes</h2>
-							<div class="causesList">
-								<div class="causesList1">
-									<a>Education</a>
-								</div>
-								<div class="causesList2">
-									<a>Health</a>
-								</div>
-								<div class="causesList3">
-									<a>Children</a>
-								</div>
-								<div class="causesList4">
-									<a>Women Empowerment</a>
-								</div>
-								<div class="causesList5">
-									<a>Food and Hunger</a>
-								</div>
-								<div class="causesList1">
-									<a>Sports</a>
-								</div>
-								<div class="causesList1">
-									<a>Animal Welfare</a>
-								</div>
-								<div class="causesList1">
-									<a>Enviroment</a>
-								</div>
-								<div class="causesList6">
-									<a>Others</a>
+						<form>
+							<div class="location">
+								<h2>Location</h2>
+								<div class="inputField">
+									<input type="text" name="search" placeholder="Location..">
 								</div>
 							</div>
+							
+							<div class="funding">
+								<h2>Funding</h2>
+								<div class="fundingLevels">
+									<input type="radio" name="fundingLevels" value="almost" checked><p>Nearly Completed</p>
+									<input type="radio" name="fundingLevels" value="new"><p> Just Started</p>
+									<input type="radio" name="fundingLevels" value="ongoing"><p> Ongoing</p>
+								</div>
+							</div>
+							
+							<div class="causes">
+								<h2>Causes</h2>
+								<div class="causesList">
+									<div class="causesList1">
+										<a>Education</a>
+									</div>
+									<div class="causesList2">
+										<a>Health</a>
+									</div>
+									<div class="causesList3">
+										<a>Children</a>
+									</div>
+									<div class="causesList4">
+										<a>Women Empowerment</a>
+									</div>
+									<div class="causesList5">
+										<a>Food and Hunger</a>
+									</div>
+									<div class="causesList1">
+										<a>Sports</a>
+									</div>
+									<div class="causesList1">
+										<a>Animal Welfare</a>
+									</div>
+									<div class="causesList1">
+										<a>Enviroment</a>
+									</div>
+									<div class="causesList6">
+										<a>Others</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			<a href="index.html"><h1 class="title">Re!magine Giving</h1></a>
+			<h2 id="registration"><span onclick="openSignUpOverlay()">Log In</span></h2>
+				<div id="SignUp" class="overlay">
+					<div class="transparentContainer">
+						<div class="translucentContainer"></div>
+							<!-- overlay content -->
+						<div class="overlay-content">
+							
+							<ul class="registrationTabs">
+								<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Sign Up as a Donor</a></li>
+								<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">Sign Up as a NGO</a></li>
+								<li><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
+							</ul>
+							<form>
+								<div id="Donor" class="tabcontent">
+									<div class="inputFieldHeadings">
+										<h2>First Name</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="FirstName">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Last Name</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="LastName">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Email ID</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="xyz@mail.com">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Mobile Number</h2>
+										<div class="inputField">
+											<input type="digits" name="search" placeholder="+91-9999999999">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Password</h2>
+										<div class="inputField">
+											<input type="password" name="search" placeholder="********">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
+									</div>
+								</div>
+							</form>
+							<form>
+								<div id="NGO" class="tabcontent">
+									<div class="inputFieldHeadings">
+										<h2>Oraganization Name</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="Oraganization Name">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Contact Person</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="FirstName LastName">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Email ID</h2>
+										<div class="inputField">
+											<input type="text" name="search" placeholder="xyz@mail.com">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Mobile Number</h2>
+										<div class="inputField">
+											<input type="digits" name="search" placeholder="+91-9999999999">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2>Password</h2>
+										<div class="inputField">
+											<input type="password" name="search" placeholder="********">
+										</div>
+									</div>
+									<div class="inputFieldHeadings">
+										<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
-			<script src="explore.js"></script>
-			<h1 class="header2">Re!magine Giving</h1>
-			<h2 class="header3">Log In</h2>
+			<h2 id="Profile"><span>Donor</span></h2>
 		</div>
 	</header>
+	
 	<div class="slideshow">
 		<div class="w3-content w3-display-container row">
 			<div class="image"><img class="mySlides" src="DSC_0115.jpg" ></div>	  

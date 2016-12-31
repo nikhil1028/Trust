@@ -9,25 +9,34 @@ header{
 	background-color: #0b5ca1  !important;
 }
 
-.header1{
+.exploreButton, #registration, #Profile{
 	cursor: pointer;
-	display: inline-block;
-	margin-left: 20px !important;
 	border-bottom: 1px solid;
 	border-bottom-color: white;
-	float: left;
 	margin: 5px;
 }
-.header2{
+.title{
 	display: inline-block;
-	width: 70%;
+	width: 50%;
 	margin: 5px;
+	color: white !Important;
+	cursor: pointer;
 }
-.header3{
+
+.exploreButton{
+	display: inline-block;
+	float: left;
+	margin-left: 20px !important;
+}
+
+#registration{
 	display: inline-block;
 	float: right;
 	margin-right: 20px !important;
-	border-bottom: 1px solid;
-	border-bottom-color: white;
-	margin: 5px;
+}
+
+#Profile{
+	display: none;
+	float: right;
+	margin-right: 20px !important;
 }

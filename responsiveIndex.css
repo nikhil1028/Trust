@@ -56,14 +56,8 @@
 	}
 }
 
-@media only screen and (max-width: 641px) {
-    /* For mobile phones: */
-	.header2 {
-		width: 50%;
-	}
-}
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 500px) {
     /* For mobile phones: */
 	* p{
 		font-size: 10px !Important;
