@@ -29,11 +29,12 @@
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
-	margin: 40px;
     width: 40%; 
     text-align: left;
 	left: 30%;	
 	background-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /* The navigation links inside the overlay */
@@ -94,6 +95,17 @@
 
 #SignUpButton{
 	cursor: pointer;
+	width: 50%;
+}
+#LogIn{
+	cursor: pointer;
+	font-weight: bold;
+}
+.inputFieldHeadings h2{
+	float: left;
+}
+.inputFieldHeadings p{
+	margin : 0;
 }
 
 .registrationTabs li {

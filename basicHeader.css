@@ -9,7 +9,7 @@ header{
 	background-color: #0b5ca1  !important;
 }
 
-.exploreButton, #registration, #Profile{
+.exploreButton, #registration{
 	cursor: pointer;
 	border-bottom: 1px solid;
 	border-bottom-color: white;
@@ -37,6 +37,9 @@ header{
 
 #Profile{
 	display: none;
-	float: right;
-	margin-right: 20px !important;
+}
+
+.dropdown h2{
+	margin: 0;
+	border: none;
 }

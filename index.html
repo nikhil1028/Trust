@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="basicHeader.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="explore.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="SignUp.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="dropdown.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="index.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="slider.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="responsiveIndex.css" media="screen"/>
@@ -88,7 +89,7 @@
 							<ul class="registrationTabs">
 								<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Sign Up as a Donor</a></li>
 								<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">Sign Up as a NGO</a></li>
-								<li><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
+								<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
 							</ul>
 							<form>
 								<div id="Donor" class="tabcontent">
@@ -122,8 +123,9 @@
 											<input type="password" name="search" placeholder="********">
 										</div>
 									</div>
-									<div class="inputFieldHeadings">
-										<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
+									<div class="inputFieldHeadings row">
+										<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
+										<p class="col-6">Already a member<span id="LogIn" onclick="LogIn()"> Login</span></p>
 									</div>
 								</div>
 							</form>
@@ -159,15 +161,22 @@
 											<input type="password" name="search" placeholder="********">
 										</div>
 									</div>
-									<div class="inputFieldHeadings">
-										<h2 id="SignUpButton"><span onclick="SignMeUp()">Sign Up!</span></h2>
+									<div class="inputFieldHeadings row">
+										<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
+										<p class="col-6">Already a member<span id="LogIn" onclick="LogIn()"> Login	</span></p>
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
-			<h2 id="Profile"><span>Donor</span></h2>
+			<div class="dropdown" id="Profile">
+				<h2><a class="dropbtn">Donor</a></h2>
+				<div class="dropdown-content">
+					<a href="#">My Profile</a>
+					<span onclick="logout()"><p class="logout">Log out</p></span>
+				</div>
+			</div>
 		</div>
 	</header>
 	

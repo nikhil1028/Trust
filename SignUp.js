@@ -16,6 +16,11 @@ function SignMeUp() {
 	document.getElementById("registration").style.display = "none";
 }
 
+function logout() {
+	document.getElementById("Profile").style.display = "none";
+	document.getElementById("registration").style.display = "inline-block";
+}
+
 function openSignUpForms(evt, registrationType) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
