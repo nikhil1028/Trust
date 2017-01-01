@@ -18,9 +18,7 @@
 
 .translucentContainer{
 	position:absolute;  
-    top:0; /* Add a top and bottom position so the element */  
-    bottom:0; /* stretches to the height of the parent */  
-    left:0;  
+    height: 100%;  
     width:100%;  
     background-color: white; 
     opacity: 0.3;  
@@ -33,8 +31,8 @@
     text-align: left;
 	left: 30%;	
 	background-color: white;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4.4%;
+    margin-bottom: 4.4%;
 }
 
 /* The navigation links inside the overlay */
@@ -101,6 +99,11 @@
 	cursor: pointer;
 	font-weight: bold;
 }
+#LogInOverlay{
+	display:none;
+	margin-top: 36%;
+	margin-bottom:36%;
+}
 .inputFieldHeadings h2{
 	float: left;
 }
@@ -145,4 +148,10 @@
     border: 1px solid #ccc;
     border-top: none;
 	display: none;
+}
+
+#LogInDetails{
+    padding: 8px 14px;
+    border: 1px solid #ccc;		
+    border-top: none;
 }

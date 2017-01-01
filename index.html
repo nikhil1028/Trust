@@ -86,50 +86,51 @@
 							<!-- overlay content -->
 						<div class="overlay-content">
 							
-							<ul class="registrationTabs">
-								<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Sign Up as a Donor</a></li>
-								<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">Sign Up as a NGO</a></li>
-								<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
-							</ul>
-							<form>
-								<div id="Donor" class="tabcontent">
-									<div class="inputFieldHeadings">
-										<h2>First Name</h2>
-										<div class="inputField">
-											<input type="text" name="search" placeholder="FirstName">
+							<div id="SignUpForms">
+								<ul class="registrationTabs">
+									<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'Donor')">Sign Up as a Donor</a></li>
+									<li><a href="javascript:void(0)" class="tablinks" onclick="openSignUpForms(event, 'NGO')">Sign Up as a NGO</a></li>
+									<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeSignUpOverlay()">&times;</a></li>
+								</ul>
+								<form>
+									<div id="Donor" class="tabcontent">
+										<div class="inputFieldHeadings">
+											<h2>First Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="FirstName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Last Name</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="LastName">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Email ID</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="xyz@mail.com">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Mobile Number</h2>
+											<div class="inputField">
+												<input type="digits" name="search" placeholder="+91-9999999999">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Password</h2>
+											<div class="inputField">
+												<input type="password" name="search" placeholder="********">
+											</div>
+										</div>
+										<div class="inputFieldHeadings row">
+											<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
+											<p class="col-6">Already a member<span id="LogIn" onclick="openLogInOverlay()"> Login</span></p>
 										</div>
 									</div>
-									<div class="inputFieldHeadings">
-										<h2>Last Name</h2>
-										<div class="inputField">
-											<input type="text" name="search" placeholder="LastName">
-										</div>
-									</div>
-									<div class="inputFieldHeadings">
-										<h2>Email ID</h2>
-										<div class="inputField">
-											<input type="text" name="search" placeholder="xyz@mail.com">
-										</div>
-									</div>
-									<div class="inputFieldHeadings">
-										<h2>Mobile Number</h2>
-										<div class="inputField">
-											<input type="digits" name="search" placeholder="+91-9999999999">
-										</div>
-									</div>
-									<div class="inputFieldHeadings">
-										<h2>Password</h2>
-										<div class="inputField">
-											<input type="password" name="search" placeholder="********">
-										</div>
-									</div>
-									<div class="inputFieldHeadings row">
-										<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
-										<p class="col-6">Already a member<span id="LogIn" onclick="LogIn()"> Login</span></p>
-									</div>
-								</div>
-							</form>
-							<form>
+								</form>
+								<form>
 								<div id="NGO" class="tabcontent">
 									<div class="inputFieldHeadings">
 										<h2>Oraganization Name</h2>
@@ -163,10 +164,36 @@
 									</div>
 									<div class="inputFieldHeadings row">
 										<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">Sign Up!</span></h2>
-										<p class="col-6">Already a member<span id="LogIn" onclick="LogIn()"> Login	</span></p>
+										<p class="col-6">Already a member<span id="LogIn" onclick="openLogInOverlay()"> Login	</span></p>
 									</div>
 								</div>
 							</form>
+							</div>
+							<div id="LogInOverlay">
+								<ul class="registrationTabs">
+									<li><h2>LOGIN</h2></li>
+									<li style="border: medium none;"><a href="javascript:void(0)" class="closebtn tablinks" onclick="closeLogInOverlay()">&times;</a></li>
+								</ul>
+								<form>
+									<div id="LogInDetails">
+										<div class="inputFieldHeadings">
+											<h2>Email ID</h2>
+											<div class="inputField">
+												<input type="text" name="search" placeholder="xyz@mail.com">
+											</div>
+										</div>
+										<div class="inputFieldHeadings">
+											<h2>Password</h2>
+											<div class="inputField">
+												<input type="password" name="search" placeholder="********">
+											</div>
+										</div>
+										<div class="inputFieldHeadings row">
+												<h2 id="SignUpButton" class="col-6"><span onclick="SignMeUp()">LogIn</span></h2>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
