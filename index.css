@@ -135,11 +135,28 @@ footer{
 	padding-left: 1%;
 }
 
+.thumbnail{
+	position: relative;
+}
 .thumbnail > img{
 	position: relative;
 	max-width: 100%;
 	height: auto;
 	margin: 0;
+}
+.locationCause{
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	opacity: 0.7;
+	width: 100%;
+}
+.thumbnail p{
+	margin: 4px;
+	font-weight: bold;
+}
+.fa-map-marker {
+    content: "\f041";
 }
 
 .projectDetails > p {
